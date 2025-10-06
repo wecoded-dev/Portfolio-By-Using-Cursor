@@ -1,0 +1,176 @@
+/* Base Theme: Black & White with luminous glass */
+:root {
+  --bg-0: #0b0b0b;
+  --bg-1: #111111;
+  --bg-2: #181818;
+  --white: #ffffff;
+  --white-60: rgba(255,255,255,0.6);
+  --white-30: rgba(255,255,255,0.3);
+  --white-10: rgba(255,255,255,0.1);
+  --shadow-strong: 0 20px 60px rgba(0,0,0,0.6);
+  --blur: 22px;
+  --radius-xl: 24px;
+}
+
+html, body {
+  background: radial-gradient(1200px 800px at 20% 0%, #151515, #0b0b0b) fixed;
+  color: var(--white);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.6;
+}
+
+/* Background Layers */
+#bg-layers {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+#three-canvas, #particles-js {
+  position: absolute;
+  inset: 0;
+}
+
+/* Navbar */
+.glassy-nav {
+  backdrop-filter: saturate(140%) blur(var(--blur));
+  -webkit-backdrop-filter: saturate(140%) blur(var(--blur));
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border-bottom: 1px solid var(--white-10);
+}
+.glassy-nav .navbar-brand {
+  letter-spacing: 0.04em;
+}
+.glassy-nav .nav-link {
+  color: var(--white-60);
+}
+.glassy-nav .nav-link.active, .glassy-nav .nav-link:hover {
+  color: var(--white);
+}
+
+/* Sections */
+.section-hero {
+  position: relative;
+  z-index: 1;
+  min-height: 96vh;
+  padding: 6rem 0 4rem;
+}
+.section {
+  position: relative;
+  z-index: 1;
+}
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Glass Cards */
+.glass-card {
+  border-radius: var(--radius-xl);
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  box-shadow: var(--shadow-strong);
+  border: 1px solid rgba(255,255,255,0.14);
+  backdrop-filter: blur(var(--blur)) saturate(160%);
+  -webkit-backdrop-filter: blur(var(--blur)) saturate(160%);
+}
+.btn-glass {
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+.btn-glass-outline {
+  border-radius: 999px;
+  border: 1px solid var(--white-30);
+}
+
+/* Hero visual */
+.hero-card {
+  transform-style: preserve-3d;
+}
+.hero-visual {
+  position: relative;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  min-height: 320px;
+  background: radial-gradient(120px 120px at 40% 30%, rgba(255,255,255,0.35), rgba(255,255,255,0.06));
+  box-shadow: inset 0 0 60px rgba(255,255,255,0.06), 0 40px 120px rgba(0,0,0,0.6);
+}
+.hero-visual .orb-highlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(300px 300px at 30% 20%, rgba(255,255,255,0.38), rgba(255,255,255,0));
+  filter: blur(40px);
+  pointer-events: none;
+}
+.hero-visual .orb-inner {
+  position: absolute;
+  inset: 18%;
+  border-radius: 50%;
+  background: radial-gradient(120px 90px at 60% 40%, rgba(255,255,255,0.24), rgba(255,255,255,0.02));
+  display: grid;
+  place-items: center;
+  font-size: 56px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Work cards */
+.work-card {
+  overflow: hidden;
+}
+.work-card .work-img {
+  display: block;
+  border-top-left-radius: var(--radius-xl);
+  border-top-right-radius: var(--radius-xl);
+  aspect-ratio: 16/11;
+  object-fit: cover;
+  filter: saturate(0) contrast(1.05) brightness(0.9);
+  transition: transform .7s cubic-bezier(.2,.6,.2,1), filter .5s;
+}
+.work-card:hover .work-img {
+  transform: scale(1.06);
+  filter: saturate(0.3) brightness(1);
+}
+.work-card .work-body { padding: 1rem 1.25rem 1.25rem; }
+
+/* Blog & misc */
+.icon-list { list-style: none; padding-left: 0; }
+.icon-list li { margin-bottom: .5rem; display: flex; align-items: center; gap: .6rem; }
+.icon-list i { color: var(--white-60); }
+.avatar { width: 48px; height: 48px; border-radius: 50%; }
+
+/* Forms */
+.form-control-glass {
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: var(--white);
+}
+.form-control-glass:focus {
+  border-color: rgba(255,255,255,0.6);
+  box-shadow: 0 0 0 .25rem rgba(255,255,255,0.15);
+  color: var(--white);
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: .9rem;
+  letter-spacing: .08em;
+}
+
+/* Utilities */
+.py-lg-6 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+
+/* Subtle noise overlay for texture */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2248%22 height=%2248%22 viewBox=%220 0 48 48%22%3E%3Ccircle cx=%222%22 cy=%222%22 r=%221%22 fill=%22white%22 fill-opacity=%220.02%22/%3E%3C/svg%3E');
+  pointer-events: none;
+  z-index: 0;
+}
