@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <meta name="description" content="A modern, glassy, animated one‑page portfolio" />
+  <title>Glassy Portfolio</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body data-bs-theme="dark">
+  <!-- Layered animated backgrounds -->
+  <div id="particles-js" class="particles-layer"></div>
+
+  <!-- Glassy Navbar -->
+  <nav class="navbar navbar-expand-lg glass-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#hero">
+        <span class="material-symbols-rounded">blur_on</span>
+        <span>Glassy</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="section hero-section position-relative overflow-hidden">
+      <div id="three-bg" class="three-bg position-absolute top-0 start-0 w-100 h-100"></div>
+      <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <div class="glass-card p-4 p-md-5 hero-card">
+              <div class="d-inline-flex align-items-center gap-2 mb-3 badge-glass">
+                <span class="material-symbols-rounded">auto_awesome</span>
+                <small class="text-uppercase">Playful • Advanced • Glassy</small>
+              </div>
+              <h1 class="display-4 display-md-3 fw-extrabold mb-3 hero-title">
+                Crafting <span class="accent-underline">glassy</span> experiences that feel alive
+              </h1>
+              <p class="lead text-secondary-300 mb-4">
+                I design and build modern web experiences with delightful motion,
+                elegant glassmorphism, and immersive interactions.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#work" class="btn btn-glass btn-lg">
+                  <span class="material-symbols-rounded me-2">play_circle</span> View Work
+                </a>
+                <a href="#contact" class="btn btn-outline-glass btn-lg">
+                  <span class="material-symbols-rounded me-2">mail</span> Contact Me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-hint d-none d-md-flex align-items-center gap-2">
+          <span class="material-symbols-rounded">south</span> Scroll
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section py-6">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-5">
+            <div class="glass-card p-4 p-md-5 reveal-up">
+              <h2 class="section-title mb-3">About Me</h2>
+              <p class="mb-3">
+                I'm a creative developer focused on expressive UI, velocity‑smooth interactions,
+                and performance‑minded graphics. I blend design, animation, and code to craft
+                memorable web experiences.
+              </p>
+              <ul class="list-unstyled small text-secondary-300 mb-0">
+                <li class="d-flex align-items-center gap-2 mb-2">
+                  <span class="material-symbols-rounded">palette</span> Glassmorphism & Micro‑interactions
+                </li>
+                <li class="d-flex align-items-center gap-2 mb-2">
+                  <span class="material-symbols-rounded">animation</span> Anime.js • Velocity • Mo.js
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-rounded">language</span> Three.js • Particles.js • Bootstrap
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="glass-card p-3 p-md-4 reveal-up">
+              <div class="row g-3">
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">7+</div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">120+</div>
+                    <div class="stat-label">Projects</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">18</div>
+                    <div class="stat-label">Awards</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Happy Clients</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">A+</div>
+                    <div class="stat-label">Code Quality</div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="stat-tile">
+                    <div class="stat-num">∞</div>
+                    <div class="stat-label">Curiosity</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section py-6">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <h2 class="section-title mb-0">Selected Work</h2>
+          <a class="link-light small" href="#">See all</a>
+        </div>
+        <div class="row g-4">
+          <!-- Work Cards -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <a class="work-card glass-card reveal-up" href="#" aria-label="Project One">
+              <div class="work-thumb" style="background-image:url('https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=1280&auto=format&fit=crop');"></div>
+              <div class="work-meta p-3">
+                <h5 class="mb-1">Interactive Portfolio</h5>
+                <small class="text-secondary-300">Three.js • Anime.js</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <a class="work-card glass-card reveal-up" href="#" aria-label="Project Two">
+              <div class="work-thumb" style="background-image:url('https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=1280&auto=format&fit=crop');"></div>
+              <div class="work-meta p-3">
+                <h5 class="mb-1">Glassy Dashboard</h5>
+                <small class="text-secondary-300">Bootstrap • Velocity</small>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <a class="work-card glass-card reveal-up" href="#" aria-label="Project Three">
+              <div class="work-thumb" style="background-image:url('https://images.unsplash.com/photo-1560692830-1c4f7c3a3e9c?q=80&w=1280&auto=format&fit=crop');"></div>
+              <div class="work-meta p-3">
+                <h5 class="mb-1">Motion Microsite</h5>
+                <small class="text-secondary-300">Mo.js • Particles.js</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOGS -->
+    <section id="blogs" class="section py-6">
+      <div class="container">
+        <h2 class="section-title mb-4">Latest Blogs</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="glass-card blog-card reveal-up">
+              <div class="p-3">
+                <div class="d-flex align-items-center gap-2 text-secondary-300 small mb-2">
+                  <span class="material-symbols-rounded">calendar_month</span>
+                  <span>Sep 28, 2025</span>
+                </div>
+                <h5 class="mb-2">Designing Playful Glassmorphism</h5>
+                <p class="mb-0 text-secondary-300">Balance clarity, contrast, and motion for accessible yet delightful UI.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="glass-card blog-card reveal-up">
+              <div class="p-3">
+                <div class="d-flex align-items-center gap-2 text-secondary-300 small mb-2">
+                  <span class="material-symbols-rounded">calendar_month</span>
+                  <span>Aug 12, 2025</span>
+                </div>
+                <h5 class="mb-2">Motion as a First‑Class Citizen</h5>
+                <p class="mb-0 text-secondary-300">Choreograph micro‑interactions using Anime.js timelines and easing.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="glass-card blog-card reveal-up">
+              <div class="p-3">
+                <div class="d-flex align-items-center gap-2 text-secondary-300 small mb-2">
+                  <span class="material-symbols-rounded">calendar_month</span>
+                  <span>Jun 4, 2025</span>
+                </div>
+                <h5 class="mb-2">Three.js for UI, not just 3D</h5>
+                <p class="mb-0 text-secondary-300">Use transmissive materials to create expressive, lightweight glass objects.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section py-6">
+      <div class="container">
+        <h2 class="section-title mb-4">Testimonials</h2>
+        <div id="testimonialCarousel" class="carousel slide glass-card overflow-hidden reveal-up" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active p-4 p-md-5">
+              <figure class="mb-0">
+                <blockquote class="blockquote mb-3">“The result feels alive and effortless.”</blockquote>
+                <figcaption class="blockquote-footer mb-0">Alex P. — Product Lead</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item p-4 p-md-5">
+              <figure class="mb-0">
+                <blockquote class="blockquote mb-3">“A masterclass in modern interaction design.”</blockquote>
+                <figcaption class="blockquote-footer mb-0">Chris R. — Creative Director</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item p-4 p-md-5">
+              <figure class="mb-0">
+                <blockquote class="blockquote mb-3">“Fast, polished, and delightful.”</blockquote>
+                <figcaption class="blockquote-footer mb-0">Taylor S. — Founder</figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section py-6">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-6">
+            <div class="glass-card p-4 p-md-5 h-100 reveal-up">
+              <h2 class="section-title mb-3">Let's build something playful</h2>
+              <p class="text-secondary-300 mb-4">Tell me about your idea — I’ll reply within 1–2 days.</p>
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control form-control-glass" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-glass" required />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Project</label>
+                    <input type="text" class="form-control form-control-glass" placeholder="A playful, glassy microsite…" />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control form-control-glass" rows="4" required></textarea>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 mt-4">
+                  <button class="btn btn-glass" type="submit">
+                    <span class="material-symbols-rounded me-2">send</span> Send Message
+                  </button>
+                  <button class="btn btn-outline-glass" type="reset">
+                    <span class="material-symbols-rounded me-2">restart_alt</span> Reset
+                  </button>
+                </div>
+              </form>
+              <div id="contactBurst" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="glass-card p-4 p-md-5 h-100 reveal-up d-flex flex-column justify-content-center">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="material-symbols-rounded">location_on</span>
+                <span>Remote • Worldwide</span>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="material-symbols-rounded">mail</span>
+                <span>hello@example.com</span>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <span class="material-symbols-rounded">link</span>
+                <a class="link-light" href="#">LinkedIn</a>
+                <span class="opacity-50">•</span>
+                <a class="link-light" href="#">Dribbble</a>
+                <span class="opacity-50">•</span>
+                <a class="link-light" href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center text-secondary-400 small">
+    <div class="container">
+      © <span id="year"></span> Glassy Portfolio — Built with love, motion, and glass.
+    </div>
+  </footer>
+
+  <!-- Libraries: jQuery, Bootstrap, Anime.js, Velocity, Mo.js, Three.js, Particles.js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/velocity-animate@2.0.6/velocity.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mojs/core@1.6.0/dist/mo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- App Scripts -->
+  <script defer src="/js/three-init.js"></script>
+  <script defer src="/js/app.js"></script>
+</body>
+</html>
