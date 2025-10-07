@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Glassy Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                <span class="title-line">Creative</span>
+                                <span class="title-line">Developer</span>
+                            </h1>
+                            <p class="hero-subtitle">Building beautiful, interactive experiences with cutting-edge technology</p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary glass-btn">View My Work</button>
+                                <button class="btn btn-outline-primary glass-btn-outline">Get In Touch</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-visual">
+                            <div class="floating-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                                <div class="shape shape-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about creating digital experiences</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content glass-card">
+                        <h3>Creative Developer</h3>
+                        <p>I'm a passionate developer with over 5 years of experience creating beautiful, interactive web experiences. I specialize in modern web technologies and love bringing creative ideas to life.</p>
+                        <div class="skills">
+                            <div class="skill-item">
+                                <span class="skill-name">Frontend Development</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Animation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image glass-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">My Work</h2>
+                    <p class="section-subtitle">Recent projects and creative work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="work-card glass-card">
+                        <div class="work-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Modern e-commerce solution with advanced animations and glassmorphism design.</p>
+                            <div class="work-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Three.js</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="work-card glass-card">
+                        <div class="work-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Mobile App Design</h4>
+                            <p>Beautiful mobile application with smooth animations and intuitive UX.</p>
+                            <div class="work-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Principle</span>
+                                <span class="tech-tag">After Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="work-card glass-card">
+                        <div class="work-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
+                            <h4>Portfolio Website</h4>
+                            <p>Creative portfolio showcasing advanced animations and glassmorphism effects.</p>
+                            <div class="work-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Latest Blogs</h2>
+                    <p class="section-subtitle">Thoughts and insights on design and development</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="blog-card glass-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">Dec 15, 2023</span>
+                                <span class="blog-category">Design</span>
+                            </div>
+                            <h4>The Future of Glassmorphism</h4>
+                            <p>Exploring the latest trends in glassmorphism design and how it's shaping modern web interfaces.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="blog-card glass-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">Dec 10, 2023</span>
+                                <span class="blog-category">Development</span>
+                            </div>
+                            <h4>Advanced CSS Animations</h4>
+                            <p>Mastering complex CSS animations and creating smooth, performant user experiences.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <article class="blog-card glass-card">
+                        <div class="blog-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">Dec 5, 2023</span>
+                                <span class="blog-category">UI/UX</span>
+                            </div>
+                            <h4>Color Psychology in Design</h4>
+                            <p>Understanding how colors affect user behavior and creating more effective designs.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">What Clients Say</h2>
+                    <p class="section-subtitle">Testimonials from satisfied clients</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonials-carousel">
+                        <div class="testimonial-item glass-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"Exceptional work! The attention to detail and creative approach exceeded our expectations. Highly recommended for any creative project."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>Sarah Johnson</h5>
+                                        <span>CEO, TechCorp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item glass-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"The animations and glassmorphism effects are absolutely stunning. This is exactly what we were looking for in our brand identity."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>Michael Chen</h5>
+                                        <span>Creative Director, DesignStudio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-item glass-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-quote">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"Professional, creative, and delivered on time. The portfolio speaks for itself - this developer knows their craft."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h5>Emily Rodriguez</h5>
+                                        <span>Marketing Manager, StartupXYZ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's create something amazing together</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form glass-card">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control glass-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control glass-input" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control glass-input" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control glass-input" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary glass-btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                    <p class="footer-text">&copy; 2023 Creative Developer. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
